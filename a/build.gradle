@@ -1,0 +1,8 @@
+plugins {
+	id 'java-library'
+}
+
+configurations.implementation.withDependencies { dependencies ->
+	def projectB = project.dependencies.project(path: ':b')
+	dependencies.add(projectB)
+}

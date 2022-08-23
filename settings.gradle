@@ -1,0 +1,4 @@
+rootProject.name = 'issue-21490'
+
+include 'a'
+include 'b'
